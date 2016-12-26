@@ -8,7 +8,6 @@ jQuery(document).ready(function($){
 
   params.waybill = parseInt(urlParam('waybill')) || 3515341;
   params.cp_id = parseInt(urlParam('cp_id')) || 10;
-  console.log(params);
 
   $.getJSON(URL, params, function(data) {
     var result = data.result[params.waybill.toString()];
